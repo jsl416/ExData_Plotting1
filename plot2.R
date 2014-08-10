@@ -1,6 +1,6 @@
 ###################################################################################
 ## Courseproject 1
-## for plot 1
+## for plot 2
 ## Written by: Lee, JungSoo
 ## (2014-08-10~08-11)
 ###################################################################################
@@ -31,7 +31,10 @@ str(to_use_data)
 
 ## Dataset completed for plotting. Above codes are common to plotting graphs for course project 1
 #############################################################################################
-## Draw the histogram for plot1
-png(file="plot1.png", width=480, height=480, units = 'px')
-hist(to_use_data$Global_active_power, main="Global Active Power", xlab="Global Active Power (kilowatts)", col="red", )
+## Draw graph for plot2
+# Sys.setlocale("LC_TIME", "en_US") 
+Sys.setlocale("LC_TIME", "English") 
+
+png(file="plot2.png", width=480, height=480, units = 'px')
+plot(to_use_data$Date, to_use_data$Global_active_power, xlab="", ylab="Global Active Power (kilowatts)", type="l")
 dev.off()
