@@ -33,5 +33,5 @@ str(to_use_data)
 #############################################################################################
 ## Draw the histogram for plot1
 png(file="plot1.png", width=480, height=480, units = 'px')
-hist(to_use_data$Global_active_power, main="Global Active Power", xlab="Global Active Power (kilowatts)", col='red")
+hist(to_use_data$Global_active_power, main="Global Active Power", xlab="Global Active Power (kilowatts)", col="red")
 dev.off()
